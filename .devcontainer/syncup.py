@@ -3,6 +3,7 @@ import os
 import json
 import time
 import pathlib
+import subprocess
 
 
 token = os.environ.get("GITHUB_TOKEN")
@@ -70,6 +71,9 @@ print(r.text)
 
 print()
 print("---- Sleeping")
-#time.sleep(20)
+time.sleep(40)
+
 
 print("Popping open window")
+subprocess.run("code -r .devcontainer/launcher.ipynb")
+
