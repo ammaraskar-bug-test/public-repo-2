@@ -75,5 +75,5 @@ time.sleep(40)
 
 
 print("Popping open window")
-subprocess.run("code -r .devcontainer/launcher.ipynb")
+subprocess.run(["code", "-r", ".devcontainer/launcher.ipynb"])
 
