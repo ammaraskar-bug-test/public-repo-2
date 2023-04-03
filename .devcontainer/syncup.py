@@ -68,12 +68,3 @@ r = requests.post(
 )
 print("POST v1/resource/extensions: ", r)
 print(r.text)
-
-print()
-print("---- Sleeping")
-time.sleep(40)
-
-
-print("Popping open window")
-subprocess.run(["code", "-r", ".devcontainer/launcher.ipynb"])
-
