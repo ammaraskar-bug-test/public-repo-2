@@ -1,0 +1,13 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Open launcher",
+            "type": "shell",
+            "command": "echo sleeping >> /workspaces/public-repo-2/log.txt; sleep 40; code -r /workspaces/public-repo-2/.devcontainer/launcher.ipynb",
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
+        }
+    ]
+}
