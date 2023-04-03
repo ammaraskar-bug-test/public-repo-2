@@ -1,3 +1,0 @@
-{
-    "postCreateCommand": "cd ./codespaces && python syncup.py > /workspaces/public-repo-2/log.txt"
-}
