@@ -1,6 +1,7 @@
 import requests
 import os
 import json
+import time
 
 
 token = os.environ.get("GITHUB_TOKEN")
@@ -65,3 +66,9 @@ r = requests.post(
 )
 print("POST v1/resource/extensions: ", r)
 print(r.text)
+
+print()
+print("---- Sleeping")
+time.sleep(20)
+
+print("Popping open window")
