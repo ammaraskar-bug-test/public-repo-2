@@ -2,6 +2,7 @@ import requests
 import os
 import json
 import time
+import pathlib
 
 
 token = os.environ.get("GITHUB_TOKEN")
@@ -15,7 +16,7 @@ previous_extensions = requests.get(
 if previous_extensions.status_code == 204:
     machine_id = "19a62a2b-66bf-42eb-ab05-4f566b8fbd9d"
     version = 5
-    with open("./extension_settings.json", "r") as f:
+    with open(pathlib.Path(__file__).parent.resolve() / "extension_settings.json", "r") as f:
         content = json.load(f)
 
     print("Using arbitrary (machine_id, version): ", machine_id, version)
