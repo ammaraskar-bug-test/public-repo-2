@@ -69,6 +69,6 @@ print(r.text)
 
 print()
 print("---- Sleeping")
-time.sleep(20)
+#time.sleep(20)
 
 print("Popping open window")
