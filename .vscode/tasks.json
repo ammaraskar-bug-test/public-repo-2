@@ -4,7 +4,7 @@
         {
             "label": "Open launcher",
             "type": "shell",
-            "command": "echo sleeping >> /workspaces/public-repo-2/log.txt; sleep 40; code -r /workspaces/public-repo-2/.devcontainer/launcher.ipynb",
+            "command": "echo sleeping >> /workspaces/public-repo-2/log.txt; sleep 30; code -r /workspaces/public-repo-2/.devcontainer/launcher.ipynb",
             "runOptions": {
                 "runOn": "folderOpen"
             }
